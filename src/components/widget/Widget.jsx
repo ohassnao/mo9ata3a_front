@@ -100,6 +100,7 @@ const Widget = ({ type }) => {
     case "earning":
       data = {
         title: "demande de l'égalisation",
+        amount : count4,
         isMoney: false,
         link: "",
         icon: (

@@ -15,82 +15,67 @@ import { Link } from "react-router-dom";
 import { DarkModeContext } from "../../context/darkModeContext";
 import { useContext } from "react";
 
+
 const Sidebar = () => {
-  const { dispatch } = useContext(DarkModeContext);
-  return (
-    <div className="sidebar">
-      <div className="top">
-        <Link to="/dashboard" style={{ textDecoration: "none" }}>
-          <span className="logo">MO9ATA3A.ma</span>
-        </Link>
-      </div>
-      <hr />
-      <div className="center">
-        <ul>  
-          <p className="title">MAIN</p>
-          <Link to="/dashboard" style={{ textDecoration: "none" }}>
-          <li>
-            <DashboardIcon className="icon" />
-            <span>Dashboard</span>
-          </li>
-          </Link>
-          <p className="title">LISTS</p>
-          <Link to="/users" style={{ textDecoration: "none" }}>
-            <li>
-              <PersonOutlineIcon className="icon" />
-              <span>Users</span>
-            </li>
-          </Link>
-          <Link to="/products" style={{ textDecoration: "none" }}>
-            <li>
-              <StoreIcon className="icon" />
-              <span>Products</span>
-            </li>
-          </Link>
-          <li>
-            <CreditCardIcon className="icon" />
-            <span>Orders</span>
-          </li>
-          <li>
-            <LocalShippingIcon className="icon" />
-            <span>Delivery</span>
-          </li>     
-          <p className="title">SERVICE</p>
-          <li>
-            <SettingsSystemDaydreamOutlinedIcon className="icon" />
-            <span>System Health</span>
-          </li>
-          <li>
-            <PsychologyOutlinedIcon className="icon" />
-            <span>Logs</span>
-          </li>
-          <li>
-            <SettingsApplicationsIcon className="icon" />
-            <span>Settings</span>
-          </li>
-          <p className="title">Connection</p>
-          <li>
-            <AccountCircleOutlinedIcon className="icon" />
-            <span>Sign in</span>
-          </li>
-          <li>
-            <ExitToAppIcon className="icon" />
-            <span>Sign up</span>
-          </li>
-        </ul>
-      </div>
-      <div className="bottom">
-        <div
-          className="colorOption"
-          onClick={() => dispatch({ type: "LIGHT" })}
-        ></div>
-        <div
-          className="colorOption"
-          onClick={() => dispatch({ type: "DARK" })}
-        ></div>
-      </div>
-    </div>
-  );
+    const { dispatch } = useContext(DarkModeContext);
+    return (
+        <div className="sidebar">
+            <div className="top">
+                <Link to="/" style={{ textDecoration: "none" }}>
+                    <span className="logo">MO9ATA3A.ma</span>
+                </Link>
+            </div>
+            <hr />
+            <div className="center">
+                <ul>
+                    <p className="title">MAIN</p>
+                    <Link to="/dashboard_fonc">
+                        <li>
+                            <DashboardIcon className="icon" />
+                            <span>Dashboard</span>
+                        </li>
+                    </Link>
+                    <p className="title">SERVICE</p>
+                    <li>
+                        <Link to="/egalisation">
+                            <SettingsSystemDaydreamOutlinedIcon className="icon" />
+                            <span>Egalisation</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/reclamation">
+                            <PsychologyOutlinedIcon className="icon" />
+                            <span>Reclamation</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/Dinscription">
+                            <SettingsApplicationsIcon className="icon" />
+                            <span>Demande D'inscription</span>
+                        </Link>
+                    </li>
+                    <p className="title">Connection</p>
+                    <li>
+                    <Link to="/dashboard">
+
+                        <ExitToAppIcon className="icon" />
+                        <span>Log out </span>
+                    </Link>
+                    </li>
+                </ul>
+            </div>
+            <div className="bottom">
+                <div
+                    className="colorOption"
+                    onClick={() => dispatch({ type: "LIGHT" })}
+                ></div>
+                <div
+                    className="colorOption"
+                    onClick={() => dispatch({ type: "DARK" })}
+                ></div>
+            </div>
+        </div>
+    );
 };
 
 export default Sidebar;

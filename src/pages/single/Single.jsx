@@ -1,5 +1,5 @@
 import "./single.scss";
-import Sidebar from "../../components/sidebar/Sidebar";
+import Sidebar_cit from "../../components/sidebar/Sidebar_cit";
 import Navbar from "../../components/navbar/Navbar";
 import Chart from "../../components/chart/Chart";
 import List from "../../components/table/Table";
@@ -7,7 +7,7 @@ import List from "../../components/table/Table";
 const Single = () => {
   return (
     <div className="single">
-      <Sidebar />
+      <Sidebar_cit />
       <div className="singleContainer">
         <Navbar />
         <div className="top">

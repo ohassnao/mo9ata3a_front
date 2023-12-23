@@ -19,14 +19,11 @@ const Login = () => {
     };
 
     axios
-      .post("http://localhost:8080/user/checkUser", body)
+      .post("http://localhost:8080/fonctionnaire/checkFonc", body)
       .then((response) => {
         if (response.status === 200) {
-          localStorage.setItem("citoyen", JSON.stringify(response.data));
-          console.log(response.data);
-
           // Redirect to "/dashboard" only if the data exists
-          navigate("/dashboard_citoyen");
+          navigate("/dashboard_fonc");
         } else {
           // If data does not exist, set userNotFound to true
           setUserNotFound(true);
@@ -45,7 +42,7 @@ const Login = () => {
       <div className="homeContainer">
         <Navbar />
         <div className="login1">
-          <h2 className="active1"> Sign in </h2>
+          <h2 className="active1">Admin Space </h2>
 
           <form className="form1">
             <div className="input-container1">
@@ -83,8 +80,6 @@ const Login = () => {
             </button>
 
             <hr className="hr1" />
-
-            <a className="a1" href="/signup">Don't have an account?</a>
           </form>
         </div>
       </div>

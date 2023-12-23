@@ -1,17 +1,17 @@
-import Sidebar from "../../components/sidebar/Sidebar";
-import Navbar from "../../components/navbar/Navbar";
+import Sidebar_cit from "../../components/sidebar/Sidebar_cit";
+import Navbar_cit from "../../components/navbar/Navbar_cit";
 import "./home.scss";
 import Widget from "../../components/widget/Widget";
 import Featured from "../../components/featured/Featured";
 import Chart from "../../components/chart/Chart";
 import Table from "../../components/table/Table";
 
-const Home = () => {
+const HomeCitoyen = () => {
   return (
     <div className="home">
-      <Sidebar />
+      <Sidebar_cit />
       <div className="homeContainer">
-        <Navbar />
+        <Navbar_cit  />
         <div className="widgets">
           <Widget type="user" />
           <Widget type="order" />
@@ -20,11 +20,11 @@ const Home = () => {
         </div>
         <div className="charts">
           <Featured />
-          <Chart title="Nombre de citoyen par Quartier" aspect={2 / 1} />
+          <Chart title="Last 6 Months (Revenue)" aspect={2 / 1} />
         </div>
       </div>
     </div>
   );
 };
 
-export default Home;
+export default HomeCitoyen;
