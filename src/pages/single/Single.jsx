@@ -1,59 +1,71 @@
 import "./single.scss";
+import React, { useState, useEffect } from "react";
 import Sidebar_cit from "../../components/sidebar/Sidebar_cit";
 import Navbar from "../../components/navbar/Navbar";
-import Chart from "../../components/chart/Chart";
-import List from "../../components/table/Table";
+import inconnuImage from './inconnu.jpg';
+
+
 
 const Single = () => {
-  return (
+  const [citoyen, setCitoyen] = useState(null);
+
+  useEffect(() => {
+    // Retrieve the stored Citoyen data from localStorage
+    const storedCitoyen = JSON.parse(localStorage.getItem("citoyen"));
+
+    // Check if Citoyen data exists
+    if (storedCitoyen) {
+      setCitoyen(storedCitoyen);
+    } else {
+      // If Citoyen data does not exist, redirect to login page
+      // You can customize this behavior based on your requirements
+      window.location.href = "/login";
+    }
+  }, []);
+   // Adjust the dependency array based on your use case
+  
+   return (
     <div className="single">
-      <Sidebar_cit />
-      <div className="singleContainer">
-        <Navbar />
-        <div className="top">
-          <div className="left">
-            <div className="editButton">Edit</div>
-            <h1 className="title">Information</h1>
+    <Sidebar_cit />
+    <div className="singleContainer">
+      <Navbar />
+      <div className="top">
+        <div className="left">
+          <h1 className="title">Your informations</h1>
+          {citoyen && (
             <div className="item">
               <img
-                src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                src={inconnuImage}
                 alt=""
                 className="itemImg"
               />
               <div className="details">
-                <h1 className="itemTitle">Jane Doe</h1>
+                <h1 className="itemTitle">{`${citoyen.nom} ${citoyen.prenom}`}</h1>
                 <div className="detailItem">
                   <span className="itemKey">Email:</span>
-                  <span className="itemValue">janedoe@gmail.com</span>
+                  <span className="itemValue">{citoyen.email}</span>
                 </div>
                 <div className="detailItem">
-                  <span className="itemKey">Phone:</span>
-                  <span className="itemValue">+1 2345 67 89</span>
+                  <span className="itemKey">Ville:</span>
+                  <span className="itemValue">{citoyen.ville}</span>
                 </div>
                 <div className="detailItem">
-                  <span className="itemKey">Address:</span>
-                  <span className="itemValue">
-                    Elton St. 234 Garden Yd. NewYork
-                  </span>
+                  <span className="itemKey">CIN:</span>
+                  <span className="itemValue">{citoyen.cin}</span>
                 </div>
                 <div className="detailItem">
-                  <span className="itemKey">Country:</span>
-                  <span className="itemValue">USA</span>
+                  <span className="itemKey">Quartier:</span>
+                  <span className="itemValue">{citoyen.quartier}</span>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="right">
-            <Chart aspect={3 / 1} title="User Spending ( Last 6 Months)" />
-          </div>
-        </div>
-        <div className="bottom">
-        <h1 className="title">Last Transactions</h1>
-          <List/>
+          )}
         </div>
       </div>
+      
     </div>
-  );
+  </div>
+);
 };
 
 export default Single;

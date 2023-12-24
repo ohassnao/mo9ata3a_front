@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Sidebar from "../../components/sidebar/Sidebar"
+import Sidebar_cit from "../../components/sidebar/Sidebar_cit"
 import Navbar from "../../components/navbar/Navbar"
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -13,7 +13,7 @@ const ReclamationPage = () => {
   }, [])
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault();         
     const id_citoyen = citoyen.id_user;
     console.log(id_citoyen);
     try {
@@ -47,7 +47,7 @@ const ReclamationPage = () => {
 
   return (
     <div className="home">
-      <Sidebar />
+      <Sidebar_cit />
       <div className="homeContainer">
         <Navbar />
         <div className="navbar-container">

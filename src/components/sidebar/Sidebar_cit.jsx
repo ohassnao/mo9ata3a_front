@@ -59,12 +59,12 @@ const Sidebar_cit = () => {
           </li>
           </Link>
           <p className="title">HISTORIQUE</p>
-          <Link to="/dashboard">
+          <Link to="/histo_lega" style={{ textDecoration: "none" }}>
           <li>
-            <SettingsApplicationsIcon className="icon" />
-            <span>Egalisations</span>
+            <SettingsSystemDaydreamOutlinedIcon className="icon" />
+            <span>Egalisation</span>
           </li>
-          </Link>
+            </Link>
           <Link to="/dashboard">
           <li>
             <SettingsApplicationsIcon className="icon" />
