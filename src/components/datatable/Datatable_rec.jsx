@@ -4,7 +4,7 @@ import { userColumns, userRows } from "../../datatablesource";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const Datatable_rec = () => {
+const   Datatable_rec = () => {
     const [data, setData] = useState(userRows);
 
     const handleDelete = (id) => {

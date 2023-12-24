@@ -25,6 +25,7 @@ import Signup from"./pages/signup/Signup";
 import HomeCitoyen from "./pages/home/HomeCitoyen";
 import List_cit from "./pages/list/List_cit";
 import Formulaire from "./pages/home/Legalisation";
+import ReclamationPage from "./pages/reclamation/reclamation";
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
             <Route path="/datatable_Dinscri" element={<Datatable_Dinscri />} />
             <Route path="/dashboard_Citoyen"element={<HomeCitoyen />} />
             <Route path="formulaire" element={<Formulaire/>} />
+            <Route path="reclamation_citoyen" element={<ReclamationPage/>} />
 
 
             < Route path="dashboard" element={<Home />} />

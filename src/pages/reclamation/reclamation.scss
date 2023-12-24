@@ -1,0 +1,86 @@
+// Assuming this is your shared styles file (e.g., styles.scss)
+
+// Define a style for the form container
+.form-container {
+    margin-top: 20px; // Adjust the margin as needed
+  }
+  
+  // Style for the label element
+  label {
+    display: block;
+    margin-bottom: 5px; // Adjust the margin as needed
+  }
+  
+  // Style for the input elements
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px; // Adjust the margin as needed
+    box-sizing: border-box;
+  }
+  .active1 {
+    border-bottom: 2px solid #5705e3;
+    padding-left: 12px;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+  }
+  
+  // Style for the submit button
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  // Add more styles as needed based on your design requirements
+  /* ReclamationPage.css */
+
+.centered-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed for your layout */
+  }
+  
+  .form-card1 {
+    width: 70%;
+    margin: auto;
+  }
+  
+  .form1 {
+    text-align: center;
+  }
+  
+  .label1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .div1 {
+    margin-bottom: 15px;
+  }
+  
+  .input1,
+  .textarea1 {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .button1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

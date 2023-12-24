@@ -43,22 +43,34 @@ const Sidebar_cit = () => {
             </li>
           </Link>
          
-          <p className="title">SERVICE</p>
+          <p className="title">SERVICES</p>
 
           <Link to="/formulaire" style={{ textDecoration: "none" }}>
           <li>
             <SettingsSystemDaydreamOutlinedIcon className="icon" />
-            <span>Egalisation</span>
+            <span>Demander Egalisation</span>
           </li>
           </Link>
 
-          <Link to="/users/test" style={{ textDecoration: "none" }}>
+          <Link to="/reclamation_citoyen" style={{ textDecoration: "none" }}>
           <li>
-            <PsychologyOutlinedIcon className="icon" />
-            <span>Reclamation</span>
+            <SettingsSystemDaydreamOutlinedIcon className="icon" />
+            <span>Demander Reclamation</span>
           </li>
           </Link>
-
+          <p className="title">HISTORIQUE</p>
+          <Link to="/dashboard">
+          <li>
+            <SettingsApplicationsIcon className="icon" />
+            <span>Egalisations</span>
+          </li>
+          </Link>
+          <Link to="/dashboard">
+          <li>
+            <SettingsApplicationsIcon className="icon" />
+            <span>Reclamations</span>
+          </li>
+          </Link>
           <p className="title">Connection</p>
           <li>
           <Link to="/dashboard">

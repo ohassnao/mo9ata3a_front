@@ -133,9 +133,6 @@ const Widget = ({ type }) => {
   }
 
   return (
-    console.log("hhh",count),
-    console.log("ff",count2),
-    console.log(count3),
     <div className="widget">
       <div className="left">
         <span className="title">{data.title}</span>
