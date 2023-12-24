@@ -27,6 +27,7 @@ import List_cit from "./pages/list/List_cit";
 import Formulaire from "./pages/home/Legalisation";
 import ReclamationPage from "./pages/reclamation/reclamation";
 import Histoique_lega from "./pages/home/Historique_lega";
+import Reponse from "./pages/reponse/Reponse"
 
 function App() {
     const { darkMode } = useContext(DarkModeContext);
@@ -55,6 +56,7 @@ function App() {
             <Route path="signup" element={<Signup />} />
             <Route path="typage" element={<ThankYouPage />} />
             <Route path="loginA" element={<LoginA />} />
+            <Route path="reponse" element={<Reponse />} />
 
             <Route path="dashboard_fonc" element={<Home_fonc />} />
             <Route path="login" element={<Login />} />

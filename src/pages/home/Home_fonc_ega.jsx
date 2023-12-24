@@ -8,7 +8,6 @@ const Home_fonc_ega = () => {
             <Sidebar_fonc />
             <div className="homeContainer">
                 <Navbar_fonc />
-                <Datatable_ega />
             </div>
         </div>
     );
