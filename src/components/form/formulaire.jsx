@@ -3,7 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import axios from 'axios';
 import "./formulaire.scss";
-
+import { Link } from 'react-router-dom';
 
 const Formulaire = () => {
   const [document, setDocument] = useState(null);
@@ -87,7 +87,9 @@ const Formulaire = () => {
                   </div>
 
                   <div className='div1'>
+                
                     <button className="button1" type="submit">Submit Form</button>
+              
                   </div>
                 </form>
               </CardContent>

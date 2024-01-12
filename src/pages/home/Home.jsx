@@ -20,7 +20,7 @@ const Home = () => {
         </div>
         <div className="charts">
           <Featured />
-          <Chart title="Nombre de citoyen par Quartier" aspect={2 / 1} />
+          <Chart title="Number of citizens per neighbour" aspect={2 / 1} />
         </div>
       </div>
     </div>

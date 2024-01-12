@@ -22,6 +22,8 @@ const Login = () => {
       .post("http://localhost:8080/fonctionnaire/checkFonc", body)
       .then((response) => {
         if (response.status === 200) {
+          localStorage.setItem("fonctionnaire", JSON.stringify(response.data));
+          console.log(response.data);
           // Redirect to "/dashboard" only if the data exists
           navigate("/dashboard_fonc");
         } else {

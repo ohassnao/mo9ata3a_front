@@ -4,6 +4,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from "react-router-dom";
 
 
 const Reponse = () => {
@@ -99,7 +100,9 @@ const handleAccept = () => {
                 />
               </div>
               <div className='div1'>
+                <Link to="/dashboard_fonc">
                 <button className="button1" onClick={handleAccept}>Send</button>
+                </Link>
               </div>
             </div>
           </CardContent>

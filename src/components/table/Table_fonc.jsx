@@ -70,7 +70,7 @@ const handleAccept = async (id) => {
         const requestData1 = response.data;
   
         // Save the request information to the user using /user/save endpoint
-        await axios.post('http://localhost:8080//email/accept-user', requestData1);
+        await axios.post('http://localhost:8080/email/accept-user', requestData1);
         axios.post('http://localhost:8080/citoyen/save', requestData1);
         axios.post('http://localhost:8080/demande_inscri_accepte/save', requestData1);
         await axios.delete(`http://localhost:8080/demande_inscri/delete/${id}`);
@@ -98,7 +98,7 @@ const handleAccept = async (id) => {
         const requestData1 = response.data;
   
         // Save the request information to the user using /user/save endpoint
-        await axios.post('http://localhost:8080//email/refuse-user', requestData1);
+        await axios.post('http://localhost:8080/email/refuse-user', requestData1);
         axios.post('http://localhost:8080/demande_inscri_refuse/save', requestData1);
         await axios.delete(`http://localhost:8080/demande_inscri/delete/${id}`);
   

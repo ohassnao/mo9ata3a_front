@@ -3,6 +3,7 @@ import Sidebar_cit from "../../components/sidebar/Sidebar_cit"
 import Navbar from "../../components/navbar/Navbar"
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import { Link } from 'react-router-dom';
 
 const ReclamationPage = () => {
   const [sujet, setSujet] = useState('');
@@ -79,6 +80,7 @@ const ReclamationPage = () => {
                 />
               </div>
               <div className='div1'>
+                
                 <button className="button1" type="submit">Send</button>
               </div>
             </form>

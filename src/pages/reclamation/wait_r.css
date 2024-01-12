@@ -1,0 +1,110 @@
+/* ThankYouPage.css */
+
+.thank-you-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .thank-you-container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .thank-you-header {
+      color: #333;
+      margin-bottom: 20px; /* Add margin-bottom for extra space */
+    }
+    
+    .thank-you-message {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .back-to-home-btn,
+    .reclamation-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .back-to-home-btn {
+      background-color: #6200ff;
+    }
+    
+    .reclamation-btn {
+      background-color: #663ea8;
+    }
+    
+    .back-to-home-btn:hover {
+      background-color: #4200b35e;
+    }
+    
+    .reclamation-btn:hover {
+      background-color: #543b7a5e;
+    }
+  
+  
+  
+  .thank-you-header {
+    color: #333;
+  }
+  
+  .thank-you-message {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column; /* Utilisez une colonne pour empiler les boutons verticalement */
+    gap: 10px; /* Ajoutez un espacement entre les boutons */
+  }
+  
+  .back-to-home-btn,
+  .reclamation-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-to-home-btn {
+    background-color: #6200ff;
+  }
+  
+  .reclamation-btn {
+    background-color: #663ea8;
+  }
+  
+  .back-to-home-btn:hover {
+    background-color: #4200b35e;
+  }
+  
+  .reclamation-btn:hover {
+    background-color: #543b7a5e;
+  }

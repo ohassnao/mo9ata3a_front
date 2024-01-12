@@ -28,6 +28,8 @@ import Formulaire from "./pages/home/Legalisation";
 import ReclamationPage from "./pages/reclamation/reclamation";
 import Histoique_lega from "./pages/home/Historique_lega";
 import Reponse from "./pages/reponse/Reponse"
+import Wait from "./pages/reclamation/wait_reponse";
+import Wait_l from "./components/form/wait_form";
 
 function App() {
     const { darkMode } = useContext(DarkModeContext);
@@ -57,6 +59,9 @@ function App() {
             <Route path="typage" element={<ThankYouPage />} />
             <Route path="loginA" element={<LoginA />} />
             <Route path="reponse" element={<Reponse />} />
+            <Route path="wait" element={<Wait/>} />
+            <Route path="wait_form" element={<Wait_l />} />
+
 
             <Route path="dashboard_fonc" element={<Home_fonc />} />
             <Route path="login" element={<Login />} />

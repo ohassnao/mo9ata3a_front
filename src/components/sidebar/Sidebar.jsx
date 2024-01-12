@@ -43,7 +43,7 @@ const Sidebar = () => {
             <SettingsApplicationsIcon className="icon" />
             <span>Demande D'inscription</span>
           </li>
-          <p className="title">Connection</p>
+          <p className="title">Citoyen Connection</p>
           <Link to="/login" style={{ textDecoration: "none" }}>
             <li>
             <AccountCircleOutlinedIcon className="icon" />
@@ -57,10 +57,11 @@ const Sidebar = () => {
           </li>
 
           </Link>
+          <p className="title">Admin Connection</p>
           <Link to="/loginA" style={{ textDecoration: "none" }}>
             <li>
             <AccountCircleOutlinedIcon className="icon" />
-            <span>Admin Space</span>
+            <span>Sign In</span>
           </li>
           </Link>
           

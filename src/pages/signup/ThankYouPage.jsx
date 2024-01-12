@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Sidebar from "../../components/sidebar/Sidebar";
+import Sidebar from "../../components/sidebar/Sidebar_cit";
 import Navbar from "../../components/navbar/Navbar";
 import './ThankYouPage.css'; // Import your CSS file for styling
 
